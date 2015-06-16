@@ -4,15 +4,50 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.media.MediaPlayer;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    MediaPlayer pussyTonight;
+    MediaPlayer eyBoss;
+    MediaPlayer cancer;
+    MediaPlayer pussypls;
+    MediaPlayer scream;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        pussyTonight = MediaPlayer.create(this, R.raw.pt);
+        eyBoss = MediaPlayer.create(this, R.raw.eyboss);
+        cancer = MediaPlayer.create(this, R.raw.cancer);
+        pussypls = MediaPlayer.create(this, R.raw.pussypls);
+        scream = MediaPlayer.create(this, R.raw.scream);
+        setTitle("FilthyFrank SoundBoard");
     }
+
+    public void pussyTonight (View view) {
+        pussyTonight.start();
+    }
+
+    public void eyBoss (View view) {
+        eyBoss.start();
+    }
+
+    public void cancer (View view) {
+        cancer.start();
+    }
+
+    public void pussypls (View view) {
+        pussypls.start();
+    }
+
+    public void scream (View view) {
+        scream.start();
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,4 +70,6 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
