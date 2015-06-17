@@ -15,6 +15,12 @@ public class MainActivity extends ActionBarActivity {
     MediaPlayer cancer;
     MediaPlayer pussypls;
     MediaPlayer scream;
+    MediaPlayer bonapetit;
+    MediaPlayer cheers;
+    MediaPlayer song;
+    MediaPlayer unfinished;
+    MediaPlayer zaynpls;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +31,11 @@ public class MainActivity extends ActionBarActivity {
         cancer = MediaPlayer.create(this, R.raw.cancer);
         pussypls = MediaPlayer.create(this, R.raw.pussypls);
         scream = MediaPlayer.create(this, R.raw.scream);
+        bonapetit = MediaPlayer.create(this, R.raw.bonapetit);
+        cheers = MediaPlayer.create(this, R.raw.cheers);
+        song = MediaPlayer.create(this, R.raw.song);
+        unfinished = MediaPlayer.create(this, R.raw.unfinished);
+        zaynpls = MediaPlayer.create(this, R.raw.zaynpls);
         setTitle("FilthyFrank SoundBoard");
     }
 
@@ -46,6 +57,26 @@ public class MainActivity extends ActionBarActivity {
 
     public void scream (View view) {
         scream.start();
+    }
+
+    public void bonapetit (View view) {
+        bonapetit.start();
+    }
+
+    public void cheers (View view) {
+        cheers.start();
+    }
+
+    public void song (View view) {
+        song.start();
+    }
+
+    public void unfinished (View view) {
+        unfinished.start();
+    }
+
+    public void zaynpls (View view) {
+        zaynpls.start();
     }
 
 
